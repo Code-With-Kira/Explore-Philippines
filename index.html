@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.builder.css"><link rel="stylesheet" href="bootstrap.css"><link rel="stylesheet" href="style(1).css">
+    <link rel="stylesheet" href="style(2).css"><link rel="stylesheet" href="style(3).css"><link rel="stylesheet" href="style(4).css">
+    <script src="bootstrap.js"></script><script src="navbar-dropdown.js"></script><script src="Slider.js"></script>
+    <title>Philippine Tourism</title>  
+    <style>
+        /*DEFINITIONS*/
+            /*[cid-example] - Is a unique id for the component or website used for styling in CSS or in JavaScript functionality.*/
+            /*lg - large*/
+            /*pos - position*/
+            /*mb - margin bottom*/
+            /*mt - margin top*/
+            /*bg - background*/
+            /*btn - button*/
+            /*bs -  bootstrap*/
+            /*md - medium devices [ex. tablets, etc.]*/
+            /*py - padding on the y-axis*/
+            /*mx - margin x-axis*/
+            /*translate3d - css function ni siya that allows my website to move element in 3d spaces in the x, y and z axis*/
+    </style>
+<!--Nag assign kog attribute of two classes sa body "desktop" for desktop views & "rounded-canvas" for rounded corners of the body-->
+<body class="desktop rounded-canvas" style="overflow-x: hidden;"><!-- "style="overflow-x: hidden;" to hide any content na mo exceed sa width viewport-->
+<!--"app-component" for larger application component, "no-sortable" aron dili ma rearranged or ma sort ang div, "pos-absolute" it's position is absolute
+ "sticky-component" the website has a sticky behavior and will remain fixed in a certaib position as the user scrolls up & down-->
+    <div class="app-component no-sortable pos-absolute sticky-component">
+    <div class="app-component-content"><!--container of the main content-->
+<!--1st section inside its content is for the navbar contents-->
+<!--Nag assign kog sections to structure my website into distinct areas-->
+    <section class="menu cid-ushO5arnDl"><!-- "menu" for the nav menu-->
+    <!--"navbar-dropdown" navbar includes dropdown menus.--><!--"navbar-fixed-top" makes the navbar fixed at the top  aron while scrolling visible gihapon siya-->
+    <!--"navbar-expand-lg" expands on larger screens & collapse into a toggleable menu on smaller screens[ex. mobile devices, tablets, etc.]-->
+    <!--"nabvar-short" aron mo gamay siya into specific styling-->
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg navbar-short" style="position: absolute;">
+		    <div class="container">
+			    <div class="navbar-brand"> 
+				    <span class="navbar-logo"><img src="Images/Logo(philippines).png" style="height: 3.5rem;"></span>
+		            <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4">Philippines</a></span><!--naka wrap ang caption na Philippines-->
+		        </div>
+                <!--"navbar-toggler collapsed" to toggle the visibility of the navbar items on smaller screens, 
+                "data-toggle and data-target" attribute ni siya  sa bootstrap.js to control the collapse behavior. when clicked, e toggle niya ang visibility with the ID #navbarSupportedContent-->
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent">
+				    <div class="hamburger"><!--creates a 3 horizontal line to indicates a menu-->
+					    <span></span>
+					    <span></span>
+					    <span></span>
+					    <span></span>
+				    </div>
+			    </button>
+			    <div class="navbar-collapse opacityScroll collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav nav-dropdown"><!--the "ul" contains the nav items-->
+                        <!--ang "li" mao ni ang nav-links-->
+                        <li class="nav-item"><a class="nav-link link text-black display-4">Explore</a></li>
+					    <li class="nav-item"><a class="nav-link link text-black display-4">Discover</a></li>
+					    <li class="nav-item"><a class="nav-link link text-black display-4">Experience</a></li>
+                    </ul>
+                <div class="icons-menu"><!--contains the icons for the navlinks-->
+                    <a class="iconfont-wrapper"><span class="p-2 iconfont"><img src="Images/Icon(phone-call).png" style="width: 30px; height: 30px;"></span></a>
+                    <a class="iconfont-wrapper"><span class="p-2 iconfont"><img src="Images/Icon(email).png" style="width: 30px; height: 30px;"></span></a>
+                    <a class="iconfont-wrapper"><span class="p-2 iconfont"><img src="Images/Icon(placeholder).png" style="width: 30px; height: 30px;" ali></span></a>
+                </div>                
+			    <div class="navbar-buttons section-btn"><a class="btn btn-primary display-4">Book Now</a></div>
+		    </div>
+	    </nav>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--2nd section inside its content is the background video and the start page of my website-->
+    <section class="cid-ushO5as8Ld fullscreen" data-bg-video="https://www.youtube.com/embed/K2Cjf8gHH3Y?autoplay=1&amp;loop=1&amp;playlist=K2Cjf8gHH3Y&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent">
+        <div class="background-video-preview" style="display: block; background-size: cover; background-position: center center; background-image: url(https://www.youtube.com/embed/K2Cjf8gHH3Y?autoplay=1&amp;loop=1&amp;playlist=K2Cjf8gHH3Y&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent);"></div>
+            <div style="overflow: hidden; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;">
+                <div style="background: rgb(0, 0, 0); inset: 0px;">
+                    <div class="video-foreground" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; overflow: hidden;">
+                        <iframe class="background-video" style="margin-top: 0px; max-width: initial; transition-property: opacity; transition-duration: 1000ms; pointer-events: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; transform: scale(1.2);" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/K2Cjf8gHH3Y?autoplay=1&amp;loop=1&amp;playlist=K2Cjf8gHH3Y&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row fade-in"><div>
+                <h1 class="section-title fonts-style white mb-4 display-1 fade-out" style="margin-top: 150px;"><b>Welcome to the Philippines</b></h1>
+                <p class="fonts-style text white mb-4 display-7 fade-out">Unleash your wanderlust in the breathtaking beauty of the Philippines!</p>
+            </div>
+            <div class="section-btn"><a class="btn btn-white-outline display-7 fade-out">Start Adventure</a></div>
+        </div>
+    </section></div></div>
+    <div class="app-component"><div class="app-component-menu"></div>
+    <div class="app-component-content">
+                <!--3rd section inside its content is the 2nd background video of my website-->
+    <section class="cid-ushO5asI5R fullscreen" data-bg-video="https://www.youtube.com/embed/y5vX8ZqkHaY?autoplay=1&amp;loop=1&amp;playlist=y5vX8ZqkHaY&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent">
+        <div class="background-video-preview" style="display: block; background-size: cover; background-position: center center; background-image: url(https://www.youtube.com/embed/y5vX8ZqkHaY?autoplay=1&amp;loop=1&amp;playlist=y5vX8ZqkHaY&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent);"></div>
+        <div style="overflow: hidden; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;">
+            <div style="background: rgb(0, 0, 0); inset: 0px;">
+                <div class="video-foreground" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; overflow: hidden;">
+                    <iframe class="background-video" style="margin-top: 0px; max-width: initial; transition-property: opacity; transition-duration: 1000ms; pointer-events: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; transform: scale(1.2);" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/y5vX8ZqkHaY?autoplay=1&amp;loop=1&amp;playlist=y5vX8ZqkHaY&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+        <div class="container-fluid">
+            <div class="row"></div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--4th section inside its content is for the brand partners of my website content-->
+    <section class="cid-ushO5asfqU">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 content-head">
+                    <div class="section-head"><h4 class="section-title fonts-style align-center mb-0 display-2" style="color: white;"><b>Trusted Travel Partners</b></h4></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2 active">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(Air Asia).jpg" alt="Air Asia"></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(PAL).jpg" alt="Philippine Air Lines"></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(Grabfood).jpg"  alt="Grab Food"></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(Cebu Pacific).jpg" alt="Cebu Pacific"></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(Bangka Tours).jpg" alt="Bangka Tours"></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                    <div class="item-wrapper">
+                        <div class=""><img src="Images/Partner(Klook).jpg" alt="Klook"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--5th section inside its content is for the most visit places in the philippines by popularity -->
+    <section class="cid-ushO5atRlD">
+        <div class="position-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-12 content-head">
+                        <div class="section-head mb-5">
+                            <h4 class="section-title fonts-style align-center mb-0 display-2"><b>Top Philippine Destinations</b></h4>
+                            <h5 class="section-subtitle fonts-style align-center mb-0 mt-4 display-7">Explore the gems of the archipelago!</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="embla">
+                <div class="embla__viewport container-fluid">
+                    <div class="embla__container" style="transform: translate3d(-1.0003%, 0px, 0px);">
+                        <div class="embla__slide slider-image item active is-selected" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Boracay).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Boracay Island</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Not the French one, but equally stunning!</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2" ><a class="btn item-btn btn-primary display-7" href="https://www.shangri-la.com/en/boracay/boracayresort/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item is-selected" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Palawan).png"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Palawan Paradise</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Where nature and adventure collide in harmony.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://palawan.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Manila).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Manila Tours</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">A captivating blend of historical landmarks, vibrant city life, and cultural experiences, showcasing the rich heritage and modern charm of the Philippine capital.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://manila.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item is-selected" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Bohol).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Chocolate Hills</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Catch the stunning and unforgettable landscape for nature lovers and adventure seekers alike.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://guidetothephilippines.ph/articles/ultimate-guides/chocolate-hills-bohol-travel-guide">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Camiguin).png"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Camiguin Surfing</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Catch waves and chill vibes in this surf haven.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://www.camiguin.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Vigan).png"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Vigan City</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Not the spanish one, but a well-preserve spanish colonial town in the Philippines making it a UNESCO World Heritage.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://www.vigan.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item is-selected" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Cebu).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Cebu Wonders</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Dive into culture, history, and pristine beaches.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://www.cebu.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Davao).png"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Davao City</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">A vibrant city known for its stunning natural landscapes, rich cultural heritage, and as the home of the iconic Mount Apo, the highest peak in the Philippines.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://www.davaocity.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Anilao).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Anilao Wonders</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Renowned for its crystal-clear waters, vibrant coral reefs, and diverse marine life, making it a haven for underwater enthusiasts.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://buceoanilao.com/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(Tarlac).png"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>Tarlac Tours</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Known for its historical significance, lush landscapes, and vibrant agricultural heritage, offering a blend of culture, nature, and tradition.</p>
+                                </div> 
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://tarlaccity.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                        <div class="embla__slide slider-image item" style="margin-left: 1rem; margin-right: 1rem;">
+                            <div class="slide-content">
+                                <div class="item-img">
+                                    <div class="item-wrapper"><img src="Images/Slide-Content(La Union).jpg"></div>
+                                </div>
+                                <div class="item-content">
+                                    <h5 class="item-title fonts-style display-5"><b>La Union Wonders</b></h5>
+                                    <p class="text fonts-style mt-3 display-7">Prominent for its beautiful beaches, vibrant surf culture, and scenic landscapes, making it a popular destination for both relaxation and adventure.</p>
+                                </div>
+                                <div class="section-btn item-footer mt-2"><a class="btn item-btn btn-primary display-7" href="https://launion.gov.ph/">See More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+                <button class="arrow arrow-left" onclick="moveSlide('left')"><i class="fas"><img src="Images/1.arrow-left.png" style="width: 50px; height: 50px;"></i></button>
+                <button class="arrow arrow-right" onclick="moveSlide('right')"><i class="fas"><img src="Images/2.arrow-right.png" style="width: 50px; height: 50px;"></i></button>     
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--6th section inside its content is for the most visit places that has a lot of adventures in th philippines-->
+    <section class="cid-ushO5attTa py-24 bg-white">
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 content-head">
+                    <div class="section-head">
+                        <h4 class="section-title fonts-style align-center mb-0 display-2"><b>Thrilling Adventures</b></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                    <div class="item-wrapper flex flex-col h-full">
+                        <div class="item-img mb-3"><img src="Images/Slide-Content(Pampanga).jpg"/></div>
+                        <div class="item-content flex-grow">
+                            <h5 class="item-title fonts-style mt-0 mb-2 display-5"><b>Aqua Planet Waterpark</b></h5>
+                            <p class="text fonts-style mb-3 display-7">2024-11-11</p>
+                            <p class="text fonts-style mb-3 display-7">Experience the paradise of Aqua Planet Waterpark, where wide array of exciting water slides, wave pools, and family-friendly attractions for all ages.</p>
+                        </div>
+                        <div class="section-btn item-footer mt-auto"><a class="btn item-btn btn-primary display-7" href="https://aquaplanet.substack.com/">Explore</a></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                    <div class="item-wrapper flex flex-col h-full">
+                        <div class="item-img mb-3"><img src="Images/Slide-Content(Batangas).jpg"/></div>
+                        <div class="item-content flex-grow">
+                            <h5 class="item-title fonts-style mt-0 mb-2 display-5"><b>Montemaria Shrine</b></h5>
+                            <p class="text fonts-style mb-3 display-7">2024-11-11</p>
+                            <p class="text fonts-style mb-3 display-7">Embark on an unforgettable journey through the breathtaking landscapes of Montemaria in Batangas, known for its iconic towering statue of the Blessed Virgin Mary, stunning ocean views, and peaceful atmosphere, making it a popular pilgrimage site and tourist spot.</p>
+                        </div>
+                        <div class="section-btn item-footer mt-auto"><a class="btn item-btn btn-primary display-7" href="http://www.montemaria.com.ph/">Explore</a></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                    <div class="item-wrapper flex flex-col h-full">
+                        <div class="item-img mb-3"><img src="Images/Slide-Content(Dahilayan).png"/></div>
+                        <div class="item-content flex-grow">
+                            <h5 class="item-title fonts-style mt-0 mb-2 display-5"><b>Dahilayan Adventure Park</b></h5>
+                            <p class="text fonts-style mb-3 display-7">2024-11-11</p>
+                            <p class="text fonts-style mb-3 display-7"> Catch the perfect thrilling outdoor activities such as zip-lining, off-road rides, and obstacle courses, set against the backdrop of cool mountain air and lush pine forests.</p>
+                        </div>
+                        <div class="section-btn item-footer mt-auto"><a class="btn item-btn btn-primary display-7" href="https://www.dahilayanadventurepark.com/">Explore</a></div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3 active">
+                    <div class="item-wrapper flex flex-col h-full">
+                        <div class="item-img mb-3"><img src="Images/Slide-Content(Zambales).jpg"/></div>
+                        <div class="item-content flex-grow">
+                            <h5 class="item-title fonts-style mt-0 mb-2 display-5"><b>Pinatubo Crater Lake</b></h5>
+                            <p class="text fonts-style mb-3 display-7">2024-11-11</p>
+                            <p class="text fonts-style mb-3 display-7">Discover the mystical beauty of the Mount Pinatubo, where stunning turquoise lake formed after the 1991 eruption, surrounded by dramatic cliffs and offering breathtaking views for adventurous trekkers.</p>
+                        </div>
+                        <div class="section-btn item-footer mt-auto"><a class="btn item-btn btn-primary display-7" href="https://www.trekkingpinatubo.com/mt-pinatubo-crater-lake/">Explore</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--7th section inside its content is for the travel partners here in the philippines [ps. daghan pay travel partners but sila ra ako gipili]-->
+    <section class="cid-ushO5atHir">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 content-head">
+                    <div class="section-head mb-5"><h4 class="section-title fonts-style align-center mb-0 display-2"><b>Meet Our Adventurers</b></h4></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img mb-3"><img src="Images/Person(Robi Domingo).jpg"></div>
+                        <div class="item-content align-left">
+                            <h5 class="item-title fonts-style display-5"><b>Robi Domingo</b></h5>
+                            <h6 class="item-subtitle fonts-style mb-3 display-7">Travel Blogger</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img mb-3"><img src="Images/Person(Atom Araullo).jpg"></div>
+                        <div class="item-content align-left">
+                            <h5 class="item-title fonts-style display-5"><b>Atom Araullo</b></h5>
+                            <h6 class="item-subtitle fonts-style mb-3 display-7">Surf Instructor</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img mb-3"><img src="Images/Person(Erwan Heussaff).jpg"></div>
+                        <div class="item-content align-left" >
+                            <h5 class="item-title fonts-style display-5"><b>Erwan Heussaff</b></h5>
+                            <h6 class="item-subtitle fonts-style mb-3 display-7">Eco Guide</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img mb-3"><img src="Images/Person(Jessica Soho).jpg"></div>
+                        <div class="item-content align-left" >
+                            <h5 class="item-title fonts-style display-5"><b>Jessica Soho</b></h5>
+                            <h6 class="item-subtitle fonts-style mb-3 display-7">Tour Guide</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+<div class="app-component"><div class="app-component-menu"></div>
+<div class="app-component-content">
+    <!--8th section inside its content is a loop container for advertising my website contents-->
+<section class="cid-ushO5atyg6">
+    <div class="container-fluid">
+        <div class="loop-container" style="position: relative; display: inline-flex; white-space: nowrap; transform: translateX(-40.25%);">
+            <div class="item display-1"> Breathtaking Landscapes * Cultural Richness * Adventurous Activities * Delicious Cuisine * Friendly Locals * Unforgettable Memories</div>
+            <div class="item display-1" style="position: absolute; left: 100%;">Breathtaking Landscapes * Cultural Richness * Adventurous Activities * Delicious Cuisine * Friendly Locals * Unforgettable Memories *</div>
+        </div>
+    </div>
+</section></div></div>
+  <div class="app-component">
+  <div class="app-component-content">
+    <!--9th section inside its content is information of ph-tourism unique experiences, stunning islands, & fun.-->
+  <section class="cid-ushO5ateCU">            
+        <div class="fallback-image disabled" style="display: none;"></div>
+        <div class="container">
+            <div class="row justify-content-center" style="display: none;">
+                <div class="col-12 content-head">
+                    <div class="card-wrapper mb-5">
+                        <div class="card-box align-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row content-row justify-content-center">
+                <div class="item col-12 col-md-6 col-lg-4 item-mb">
+                    <div class="item-wrapper">
+                        <div class="title mb-2 mb-md-3"><span class="num fonts-style display-1"><b>7,641</b></span></div>
+                        <h4 class="card-title fonts-style display-5"><b>Stunning Islands</b></h4>
+                    </div>
+                </div>
+                <div class="item col-12 col-md-6 col-lg-4 item-mb">
+                    <div class="item-wrapper">
+                        <div class="title mb-2 mb-md-3"><span class="num fonts-style display-1"><b>1,000+</b></span></div>
+                        <h4 class="card-title fonts-style display-5"><b>Unique Experiences</b></h4>
+                    </div>
+                </div>
+                    <div class="item col-12 col-md-6 col-lg-4 item-mb">
+                        <div class="item-wrapper">
+                            <div class="title mb-2 mb-md-3"><span class="num fonts-style display-1"><b>100%</b></span></div>
+                            <h4 class="card-title fonts-style display-5"><b>Pure Fun</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--10th section inside its content are feedbacks of famous travelers in the philippines-->
+    <section class="cid-ushO5au0s0">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-12 mb-0 content-head"><h3 class="section-title fonts-style align-center mb-0 display-2"><b>Cheers!</b></h3></div>
+            </div>
+            <div class="row">
+                <div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+                    <div class="item-wrapper">
+                        <div class="card-box align-left">
+                            <p class="card-text fonts-style display-7">The Philippines is a paradise! I can't wait to return!</p>
+                            <div class="img-wrapper mt-4 mb-3"><img src="Images/Person(Kara David).jpg"></div>
+                            <h5 class="card-title fonts-style display-7"><b>Kara David</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="card-box align-left">
+                            <p class="card-text fonts-style display-7">Every island is a new adventure! Truly unforgettable!</p>
+                            <div class="img-wrapper mt-4 mb-3"><img src="Images/Person(Wil Dasovich).jpg"></div>
+                            <h5 class="card-title fonts-style display-7"><b>Wil Dasovich</b></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12 col-md-6 col-lg-4">
+                    <div class="item-wrapper">
+                        <div class="card-box align-left">
+                            <p class="card-text fonts-style display-7">From beaches to mountains, the Philippines has it all!</p>
+                            <div class="img-wrapper mt-4 mb-3"><img src="Images/Person(Drew Arellano).jpg"></div>
+                            <h5 class="card-title fonts-style display-7"><b>Drew Arellano</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--11th section inside its content are the most frequent asked questions while traveling on the philippine -->
+    <section class="cid-ushO5auwyn">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-10 m-auto">
+                    <div class="content">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 content-head">
+                                <div class="section-head"><h4 class="section-title fonts-style align-center mb-0 display-2"><b>Curious Minds</b></h4></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="panel-title collapsed">
+                                        <h6 class="panel-title-edit semibold fonts-style mb-0 display-5">What's the best time to visit?</h6>
+                                        <span>
+                                            <i class="fas arrow-down"><img src="Images/4.arrow-down.png" style="width: 50px; height: 50px;"></i>
+                                            <i class="fas arrow-up"><img src="Images/3.arrow-up.png" style="width: 50px; height: 50px;"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="panel-collapse noScroll collapse">
+                                    <div class="panel-body"><p class="fonts-style panel-text display-7">The dry season from November to April is ideal!</p></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="panel-title collapsed">
+                                        <h6 class="panel-title-edit semibold fonts-style mb-0 display-5">Are there any local delicacies?</h6>
+                                        <span>
+                                            <i class="fas arrow-down"><img src="Images/4.arrow-down.png" style="width: 50px; height: 50px;"></i>
+                                            <i class="fas arrow-up"><img src="Images/3.arrow-up.png" style="width: 50px; height: 50px;"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="panel-collapse noScroll collapse">
+                                    <div class="panel-body"><p class="fonts-style panel-text display-7">Absolutely! Try adobo and lechon!</p></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="panel-title collapsed">
+                                        <h6 class="panel-title-edit semibold fonts-style mb-0 display-5">Is it safe to travel there?</h6>
+                                        <span>
+                                            <i class="fas arrow-down"><img src="Images/4.arrow-down.png" style="width: 50px; height: 50px;"></i>
+                                            <i class="fas arrow-up"><img src="Images/3.arrow-up.png" style="width: 50px; height: 50px;"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="panel-collapse noScroll collapse">
+                                    <div class="panel-body"><p class="fonts-style panel-text display-7">Yes, just keep your wits about you!</p></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="panel-title collapsed">
+                                        <h6 class="panel-title-edit semibold fonts-style mb-0 display-5">What's the currency used?</h6>
+                                        <span>
+                                            <i class="fas arrow-down"><img src="Images/4.arrow-down.png" style="width: 50px; height: 50px;"></i>
+                                            <i class="fas arrow-up"><img src="Images/3.arrow-up.png" style="width: 50px; height: 50px;"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="panel-collapse noScroll collapse">
+                                    <div class="panel-body"><p class="fonts-style panel-text display-7">Philippine Peso (PHP) is the currency!</p></div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a class="panel-title collapsed">
+                                        <h6 class="panel-title-edit semibold fonts-style mb-0 display-5">How do I get around?</h6>
+                                        <span>
+                                            <i class="fas arrow-down"><img src="Images/4.arrow-down.png" style="width: 50px; height: 50px;"></i>
+                                            <i class="fas arrow-up"><img src="Images/3.arrow-up.png" style="width: 50px; height: 50px;"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="panel-collapse noScroll collapse">
+                                    <div class="panel-body"><p class="fonts-style panel-text display-7">Buses, jeepneys, and tricycles are everywhere!</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <script src="comments.js"></script>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--12th section inside its content is a gallery of the festivals in the philippines-->
+    <section class="cid-ushO5auxcz">
+        <div class="overlay" style="display: none;"></div>
+        <div class="container-fluid gallery-wrapper">
+            <div class="grid-container">
+                <div class="grid-container-1" style="transform: translate3d(-200px, 0px, 0px);">
+                    <div class="grid-item"><img src="Images/Fiesta(Ati-Atihan Festival).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Sinulog Festival).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Masskara Festival).png"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Dinagyang).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Pahiyas).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Ati-Atihan Festival).jpg"></div>
+                </div>
+                <div class="grid-container-2" style="transform: translate3d(-70px, 0px, 0px);">
+                    <div class="grid-item"><img src="Images/Fiesta(Flores de Mayo).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Higantes Festival).jpeg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Moriones).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Panagbenga Festival).png"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Pintados Kasadyaan).jpg"></div>
+                    <div class="grid-item"><img src="Images/Fiesta(Flores de Mayo).jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--13th section inside its content is where you can book tickets, plans, guides, & etc.-->
+    <section class="cid-ushO5au1g9">   
+        <div class="overlay" style="display: none; opacity: 0.5; background-color: rgb(255, 255, 255);"></div>
+        <div class="fallback-image disabled" style="display: none;"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="content-wrap col-12 col-md-6">
+                    <h1 class="section-title fonts-style white mb-4 display-2"><b data-app-selector=".section-title">Book Your Adventure Now!</b></h1>
+                    <p class="fonts-style text white mb-4 display-7">Don't miss out on the fun and sun!</p>
+                    <div class="section-btn"><a class="btn btn-primary display-7">Start Exploring!</a></div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component"><div class="app-component-menu"></div>
+    <div class="app-component-content">
+        <!--14th section inside its content are Travel Plans example in the Philippines-->
+    <section class="cid-ushO5avHEg">
+        <div class="overlay" style="display: none;"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 content-head">
+                    <div class="section-head mb-5"><h4 class="section-title fonts-style align-center mb-0 display-2"><b>Travel Plans</b></h4></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb active">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title fonts-style mb-0 display-5"><b>Explorer</b></h5>
+                            <h6 class="item-subtitle fonts-style mt-0 mb-0 display-7"><b>₱299</b>/per month</h6>
+                        </div>
+                        <div class="item-content"><p class="text fonts-style display-7" >Perfect for solo travelers seeking adventure!</p></div>
+                        <div class="section-btn item-footer "><a class="btn item-btn btn-primary display-7">Join Now!</a></div>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title fonts-style mb-0 display-5"><b>Family Fun</b></h5>
+                            <h6 class="item-subtitle fonts-style mt-0 mb-0 display-7"><b>₱599</b>/per month</h6>
+                        </div>
+                        <div class="item-content"><p class="text fonts-style display-7">Great for families wanting to explore together!</p></div>
+                        <div class="section-btn item-footer "><a class="btn item-btn btn-primary display-7">Join Now!</a></div>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title fonts-style mb-0 display-5"><b>Luxury Escape</b></h5>
+                            <h6 class="item-subtitle fonts-style mt-0 mb-0 display-7"><b>₱1,199</b>/per month</h6>
+                        </div>
+                        <div class="item-content"><p class="text fonts-style display-7">Indulge in the finest experiences the Philippines offers!</p></div>
+                        <div class="section-btn item-footer "><a class="btn item-btn btn-primary display-7">Join Now!</a></div>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12 col-md-6 col-lg-3 item-mb">
+                    <div class="item-wrapper">
+                        <div class="item-head">
+                            <h5 class="item-title fonts-style mb-0 display-5"><b>Ultimate Explorer</b></h5>
+                            <h6 class="item-subtitle fonts-style mt-0 mb-0 display-7"><b>₱1,799</b>/per month</h6>
+                        </div>
+                        <div class="item-content"><p class="text fonts-style display-7">For those who want it all, no limits!</p></div>
+                        <div class="section-btn item-footer "><a class="btn item-btn btn-primary display-7">Join Now!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--15th section inside its content is social media [PS. link ra sa fb ako gigamit sa tanan kay sample website ramani siya]-->
+    <section class="cid-ushO5av6uK">
+        <div class="container">
+            <div class="row">
+                <h3 class="section-title align-center mb-5 fonts-style display-2"><b>Follow Us For Adventures!</b></h3>
+                <div class="col-12">
+                    <div class="social-row" >
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(facebook).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(twitter).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(instagram).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(linkedin).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(tiktok).png" style="width: 50px; height: 50px;"></span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--16th section inside its content is social media-->
+    <section class="cid-ushO5avQkZ">   
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 content-head">
+                    <div class="section-head mb-5"><h3 class="section-title fonts-style align-center mb-0 display-2"><b style="color: white;">Get In Touch Now!</b></h3></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mx-auto form">
+                    <form class="form form-with-styler">
+                        <div class="dragArea row">
+                            <div class="col-md col-sm-12 form-group mb-3"><input type="text" name="name" placeholder="Name" class="form-control"></div>
+                            <div class="col-md col-sm-12 form-group mb-3"><input type="email" name="email" placeholder="Email" class="form-control"></div>
+                            <div class="col-12 form-group mb-3 mb-3"><input type="url" name="url" placeholder="Phone" class="form-control"></div>
+                            <div class="col-12 form-group mb-3"><textarea name="textarea" placeholder="Message" class="form-control"></textarea></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 align-center section-btn"><a type="submit" class="btn btn-primary display-7">Submit!</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--17th section inside its content is contact informations-->
+    <section class="cid-ushO5avtum">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="col-12 col-md-12">
+                        <h5 class="section-title fonts-style mt-0 mb-4 display-2" style="color: white;"><b>Local Experts</b></h5>
+                        <p class="section-subtitle fonts-style mt-0 mb-4 display-7">
+                            Phone: +63 123 456 7890
+                            <br>Email: example@philippinetourism.com
+                            <br>Address: CSU-Main Campus, Philippine
+                            <br>Working Hours: Mon-Sun: 9 AM - 6 PM
+                        </p>
+                        <div class="section-btn item-footer mt-3 main-button" style="display: none;">
+                            <a class="btn item-btn btn-primary display-7">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 side-features">
+                    <div class="google-map" map="_params.googleMap">
+                        <iframe frameborder="0" style="border:0" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.1594425051003!2d125.59485717587232!3d8.957451890103048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                            1!3m3!1m2!1s0x3301eac565a4abe5%3A0x87859279e2e3f66a!2sCaraga%20State%20University%20-%20Main%20Campus!5e0!3m2!1sen!2sph!4v1732788051834!5m2!1sen!2sph" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section></div></div>
+    <div class="app-component">
+    <div class="app-component-content">
+        <!--18th section inside its content is the footer of my website-->
+    <section class="cid-ushO5avSiy">
+        <div class="container">
+            <div class="row">
+                <div class="row-links">
+                    <ul class="header-menu"> 
+                        <li class="header-menu-item fonts-style display-5"><a href="" class="text-white">Home</a></li>
+                        <li class="header-menu-item fonts-style display-5"><a href="" class="text-white">About</a></li>
+                        <li class="header-menu-item fonts-style display-5"><a href="" class="text-white">Tours</a></li>
+                        <li class="header-menu-item fonts-style display-5"><a href="" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="social-row">
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(facebook).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(twitter).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(instagram).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(linkedin).png" style="width: 50px; height: 50px;"></span></a></div>
+                        <div class="soc-item"><a href="https://www.facebook.com/CodeWithKira1116"><span class="iconfont"><img src="Images/Social(tiktok).png" style="width: 50px; height: 50px;"></span></a></div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5"><p class="fonts-style copyright display-7">© 2024 Laurence Egay. All rights reserved.</p></div>
+            </div>
+        </div>
+    </section></div></div>
+</body>
+</html>
